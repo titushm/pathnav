@@ -21,7 +21,7 @@ print(path.resolved_path) # get the full path without relative parts such as .. 
 # Methods
 print(path.up()) # go up one directory
 print(path.into("example-repo")) # go down one specified directory
-print(path.get_file("text-file.txt")) # get a file by name in the directory
+print(path.get_file("text-file.txt")) # get a file by name in the directory, returns None if no file is present
 parent_path = pathnav.path("C:\\Users\\titushm\\Repos")
 print(path.is_subdir(parent_path)) # check if a path is a subdirectory of another path
 
