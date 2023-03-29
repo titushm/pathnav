@@ -52,7 +52,7 @@ if __name__ != "__main__":
 			self.path = path
 			self.file_name = file_name
 			file_type = file_name.split(".")
-			file_type.remove(self.file_name)
+			del file_type[0]
 			file_type.insert(0, "")
 			self.file_type = file_type[-1]
 			self.parent_dir = dirPath(self.parts, "\\".join(self.parts))
