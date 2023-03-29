@@ -32,4 +32,6 @@ print(path.path) # get the path as a string
 print(path.file_name) # get the file name as string
 print(path.file_type) # get the file type as a string
 print(path.parent_dir) # returns a directory path object for the directory that the file is in
+# Methods
+print(path.is_subdir(parent_path))
 ```
