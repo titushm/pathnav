@@ -19,7 +19,7 @@ print(path.dir_size) # get the size in bytes of the directory
 
 # Methods
 print(path.up()) # go up one directory
-print(path.down("example-repo")) # go down one specified directory
+print(path.into("example-repo")) # go down one specified directory
 print(path.get_file("text-file.txt")) # get a file by name in the directory
 
 path = pathnav.path("C:\\Users\\titushm\\Repos\\Github\\test-file.txt") # create a file path object
