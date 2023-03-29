@@ -6,6 +6,7 @@ if __name__ != "__main__":
 			if not os.path.isdir(path) and not os.path.isfile(path):
 				raise errors.AbsentPathError
 			self.isFile = os.path.isfile(path)
+			path = path.replace("/", "\\")
 			parts = path.split("\\")
 			self.parts = [item for item in parts if item != ""]
 			if self.isFile:
