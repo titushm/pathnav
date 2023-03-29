@@ -16,7 +16,7 @@ print(path.dir_name) # get the name of the directory
 print(path.child_dirs) # get a list of directorys in the directory
 print(path.child_files) # get a list of files in the directory
 print(path.dir_size) # get the size in bytes of the directory
-print(path.resolved_path) # get the full path without relative parts such as ..
+print(path.resolved_path) # get the full path without relative parts such as .. and %enviroment_varible%
 
 # Methods
 print(path.up()) # go up one directory
