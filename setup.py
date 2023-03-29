@@ -1,9 +1,13 @@
 from distutils.core import setup
+with open('README.md', 'r') as f:
+    long_description = f.read()
 setup(
   name = 'pathnav',
   packages = ['pathnav'],
-  version = '1.0',
-  license='MPL-2',
+  version = '1.1',
+  long_description= long_description,
+  long_description_content_type='text/markdown',
+  license='Mozilla Public License 2.0',
   description = 'Navigate paths with ease',
   author = 'TitusHM',
   author_email = '',
@@ -15,7 +19,7 @@ setup(
 	'Development Status :: 4 - Beta',
 	'Intended Audience :: Developers',
 	'Topic :: Software Development :: Build Tools',
-	'License :: OSI Approved :: MPL-2',
+	'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
 	'Programming Language :: Python :: 3.5',
 	'Programming Language :: Python :: 3.6',
 	'Programming Language :: Python :: 3.7',
