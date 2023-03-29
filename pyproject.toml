@@ -1,6 +1,6 @@
 [project]
 name = "pathnav"
-version = "1.2.3"
+version = "1.2.4"
 authors = [
   { name="TitusHM", email="dev.titushm@gmail.com" },
 ]
