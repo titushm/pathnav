@@ -4,7 +4,7 @@ with open('README.md', 'r') as f:
 setup(
   name = 'pathnav',
   packages = ['pathnav'],
-  version = '1.2.6',
+  version = '1.2.7',
   long_description= long_description,
   long_description_content_type='text/markdown',
   license='Mozilla Public License 2.0',

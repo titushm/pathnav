@@ -4,10 +4,10 @@ if __name__ != "__main__":
 
 	class path():
 		def __new__(self, path):
-			if not os.path.isdir(path) and not os.path.isfile(path):
+			if not os.path.isdir(os.path.expandvars(path)) and not os.path.isfile(os.path.expandvars(path)):
 				if not os.path.isdir(os.path.expandvars(path)):
 					raise errors.AbsentPathError
-			self.isFile = os.path.isfile(path)
+			self.isFile = os.path.isfile(os.path.expandvars(path))
 			path = path.replace("/", "\\")
 			parts = path.split("\\")
 			self.parts = [item for item in parts if item != ""]
@@ -37,7 +37,7 @@ if __name__ != "__main__":
 			return dirPath(self.parts, self.path)
 
 		def into(self, childDirectory):
-			if not os.path.isdir(f"{self.path}\\{childDirectory}"):
+			if not os.path.isdir(f"{os.path.expandvars(self.path)}\\{childDirectory}"):
 				raise errors.AbsentChildDirectoryError
 			self.path = f"{self.path}\\{childDirectory}"
 			self.resolved_path = f"{self.resolved_path}\\{childDirectory}"
@@ -46,7 +46,7 @@ if __name__ != "__main__":
 		
 		def get_file(self, file_name):
 			file_path = f"{self.path}\\{file_name}"
-			if not os.path.isfile(file_path):
+			if not os.path.isfile(os.path.expandvars(file_path)):
 				return None
 			return filePath(self.parts, file_path, file_name)
 
