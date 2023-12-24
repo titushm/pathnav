@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 with open('README.md', 'r') as f:
     long_description = f.read()
 
+
 VERSION = '0.0.1' 
 DESCRIPTION = 'A command-line GUI for Python'
 
