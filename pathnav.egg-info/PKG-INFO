@@ -1,3 +1,23 @@
+Metadata-Version: 2.1
+Name: pathnav
+Version: 1.2.7
+Summary: Naviagte paths with ease
+Home-page: https://github.com/titushm/pathnav
+Download-URL: https://github.com/titushm/pathnav/archive/refs/heads/main.zip
+Author: TitusHM
+Author-email: TitusHM <dev.titushm@gmail.com>
+License: Mozilla Public License 2.0
+Project-URL: Homepage, https://github.com/titushm/pathnav
+Project-URL: Bug Tracker, https://github.com/titushm/pathnav/issues
+Keywords: path,navigation,path edit
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+
 # pathnav
 Navigate paths with ease for python
 
